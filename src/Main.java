@@ -8,9 +8,11 @@ public class Main {
 
         //Declaring variables
         Scanner in = new Scanner(System.in);
-        int height = 0;
-        int width = 0;
-        int diagonal = 0;
+        double height = 0;
+        double width = 0;
+        double diagonal = 0;
+        double area = 0;
+        double perimeter = 0;
         String trash = "";
         Boolean done = false;
 
@@ -19,11 +21,14 @@ public class Main {
         do
         {
             System.out.println("Enter the height of the rectangle:");
-            if(in.hasNextInt())
+            if(in.hasNextDouble())
             {
-                height = in.nextInt();
+                height = in.nextDouble();
                 in.nextLine(); // clearing buffer
+                if(height > 0)
+                {
                 done = true;
+                }
             }
             else
             {
@@ -35,11 +40,14 @@ public class Main {
         do
         {
             System.out.println("Enter the width of the rectangle:");
-            if(in.hasNextInt())
+            if(in.hasNextDouble())
             {
-                width = in.nextInt();
+                width = in.nextDouble();
                 in.nextLine(); // clearing buffer
-                done = true;
+                if(width > 0)
+                {
+                    done = true;
+                }
             }
             else
             {
@@ -48,6 +56,11 @@ public class Main {
             }
         } while(!done);
 
-
+        //computing the outputs then outputting the results
+        area = height * width;
+        perimeter = (2 * height) + (2 * width);
+        diagonal = Math.sqrt((height * height) + (width * width));
+        System.out.println("The are of the rectangle is " + area + " and the perimeter is " + perimeter);
+        System.out.println("The length of the diagonal of the rectangle is " + diagonal);
     }
 }
