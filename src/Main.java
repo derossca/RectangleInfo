@@ -64,7 +64,7 @@ public class Main {
         area = height * width;
         perimeter = (2 * height) + (2 * width);
         diagonal = Math.sqrt((height * height) + (width * width));
-        System.out.println("The are of the rectangle is " + area + " and the perimeter is " + perimeter);
+        System.out.println("The area of the rectangle is " + area + " sq. and the perimeter is " + perimeter);
         System.out.println("The length of the diagonal of the rectangle is " + diagonal);
     }
 }
