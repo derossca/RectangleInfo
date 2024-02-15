@@ -14,7 +14,7 @@ public class Main {
         double area = 0;
         double perimeter = 0;
         String trash = "";
-        Boolean done = false;
+        boolean done = false;
 
         //do while loops for height requiring input from user
         //WHY CAN'T I GET IT TO NOT DO A NEGATIVE NUMBER???
@@ -28,6 +28,10 @@ public class Main {
                 if(height > 0)
                 {
                 done = true;
+                }
+                else
+                {
+                    System.out.println("Please enter a valid postive whole number, not " + height);
                 }
             }
             else
