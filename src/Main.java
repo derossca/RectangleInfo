@@ -17,7 +17,6 @@ public class Main {
         boolean done = false;
 
         //do while loops for height requiring input from user
-        //WHY CAN'T I GET IT TO NOT DO A NEGATIVE NUMBER???
         do
         {
             System.out.println("Enter the height of the rectangle:");
@@ -41,6 +40,10 @@ public class Main {
             }
         } while(!done);
 
+        //resets sentinel
+        done = false;
+
+        //do while loops for width requiring input from user
         do
         {
             System.out.println("Enter the width of the rectangle:");
@@ -51,6 +54,10 @@ public class Main {
                 if(width > 0)
                 {
                     done = true;
+                }
+                else
+                {
+                    System.out.println("Please enter a valid postive whole number, not " + width);
                 }
             }
             else
