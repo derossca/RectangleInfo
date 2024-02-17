@@ -4,8 +4,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        //PSEUDO CODE GOES HERE
-
         //Declaring variables
         Scanner in = new Scanner(System.in);
         double height = 0;
@@ -16,7 +14,7 @@ public class Main {
         String trash = "";
         boolean done = false;
 
-        //do while loops for height requiring input from user
+        //do while loop for height requiring input from user
         do
         {
             System.out.println("Enter the height of the rectangle:");
@@ -43,7 +41,7 @@ public class Main {
         //resets sentinel
         done = false;
 
-        //do while loops for width requiring input from user
+        //do while loop for width requiring input from user
         do
         {
             System.out.println("Enter the width of the rectangle:");
