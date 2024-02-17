@@ -28,7 +28,7 @@ public class Main {
                 }
                 else
                 {
-                    System.out.println("Please enter a valid postive whole number, not " + height);
+                    System.out.println("Please enter a valid positive whole number, not " + height);
                 }
             }
             else
@@ -55,7 +55,7 @@ public class Main {
                 }
                 else
                 {
-                    System.out.println("Please enter a valid postive whole number, not " + width);
+                    System.out.println("Please enter a valid positive whole number, not " + width);
                 }
             }
             else
